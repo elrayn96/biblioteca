@@ -1,2 +1,2 @@
-# biblioteca
-Just studying
+# Biblioteca App
+Java Spring Boot .jar deployment project.
