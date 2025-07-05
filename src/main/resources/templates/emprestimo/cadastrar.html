@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+
+<html lang="pt">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>Registrar Empréstimo</title>
+
+  <link rel="stylesheet" href="/css/style.css">
+
+  <style>
+
+    #exemplares-selecionados {
+
+      display: flex;
+
+      flex-wrap: wrap;
+
+      gap: 10px;
+
+      margin-top: 10px;
+
+    }
+
+    .tag-exemplar {
+
+      background: #dff0d8;
+
+      padding: 8px 12px;
+
+      border-radius: 20px;
+
+      font-size: 14px;
+
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+
+      display: flex;
+
+      align-items: center;
+
+    }
+
+    .tag-exemplar span {
+
+      margin-left: 6px;
+
+      cursor: pointer;
+
+      color: red;
+
+    }
+
+    .autocomplete-list {
+
+      border: 1px solid #ccc;
+
+      background-color: white;
+
+      max-height: 150px;
+
+      overflow-y: auto;
+
+      position: absolute;
+
+      z-index: 10;
+
+      width: 100%;
+
+    }
+
+    .autocomplete-list div {
+
+      padding: 8px;
+
+      cursor: pointer;
+
+    }
+
+    .autocomplete-list div:hover {
+
+      background-color: #f1f1f1;
+
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+  <h1>Registrar Empréstimo</h1>
+
+  <form action="/emprestimo/cadastrar" method="post" onsubmit="return prepararEnvio()" id="formEmprestimo">
+
+
+
+    <label for="usuario">ID do Usuário:</label>
+
+    <input type="text" id="usuario" name="usuarioId" required autocomplete="off">
+
+    <div id="sugestoes-usuario" class="autocomplete-list"></div>
+
+
+
+    <label for="exemplar">Adicionar Exemplar (ID):</label>
+
+    <input type="text" id="exemplar" autocomplete="off">
+
+    <div id="sugestoes-exemplar" class="autocomplete-list"></div>
+
+
+
+    <div id="exemplares-selecionados"></div>
+
+    <input type="hidden" name="exemplarIds" id="exemplarIds">
+
+    
+
+
+
+    <div class="button-group">
+
+      <button type="submit">Finalizar Empréstimo</button>
+
+    </div>
+
+  </form>
+
+</div>
+
+<script src="/js/emprestimo-form.js"></script>
+
+</body>
+
+</html>
+
+
+
