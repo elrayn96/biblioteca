@@ -1,2 +1,2 @@
 # Biblioteca App
-Java Spring Boot .jar deployment project.
+Java Spring Boot Library loans deployment project.
