@@ -1,0 +1,75 @@
+
+
+<!DOCTYPE html>
+
+<html lang="pt">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>Devolução de Livros</title>
+
+  <link rel="stylesheet" href="/css/style.css">
+
+  <style>
+
+    .hidden {
+
+      display: none;
+
+    }
+
+    .exemplar-item {
+
+      background: #f0f0f0;
+
+      padding: 8px 12px;
+
+      margin: 5px 0;
+
+      border-radius: 6px;
+
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <div class="container">
+
+    <h1>Devolução de Livros</h1>
+
+
+
+    <label for="usuarioId">Digite o ID do Usuário:</label>
+
+    <input type="text" id="usuarioId" placeholder="Ex: EST00001" required>
+
+    <button onclick="buscarEmprestimo()">Buscar Empréstimo</button>
+
+
+
+    <div id="detalhesEmprestimo" class="hidden">
+
+      <h2>Exemplares Emprestados:</h2>
+
+      <div id="listaExemplares"></div>
+
+
+
+      <button onclick="confirmarDevolucao()">Confirmar Devolução</button>
+
+    </div>
+
+  </div>
+
+
+
+  <script src="/js/devolucao.js"></script>
+
+</body>
+
+</html>
