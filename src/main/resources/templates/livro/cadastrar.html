@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <title>Cadastrar Livro</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Cadastrar Livro</h1>
+    <form action="/livro/cadastrar" method="post">
+      <label for="nome">Título do Livro:</label>
+      <input type="text" id="nome" name="nome" required>
+
+      <label for="editoraId">Editora:</label>
+      <select id="editoraId" name="editoraId" required>
+        
+      </select>
+
+      <label for="areaId">Área de Conhecimento:</label>
+      <select id="areaId" name="areaId" required>
+        
+      </select>
+
+      <label>Autores:</label>
+      <div id="autores-container">
+        
+      </div>
+      <div class="button-group">
+        <button type="submit">Cadastrar</button>
+      </div>
+    </form>
+  </div>
+
+  <script src="/js/livro-cadastro.js"></script>
+</body>
+</html>

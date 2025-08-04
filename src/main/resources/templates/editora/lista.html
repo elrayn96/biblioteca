@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Editoras</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<div class="container">
+    <h1>Lista de Editoras</h1>
+    <table>
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nome</th>
+            <th>Endereço</th>
+            <th>Telefone</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="editora : ${edi}">
+            <td th:text="${editora.id}"></td>
+            <td th:text="${editora.nome}"></td>
+            <td th:text="${editora.endereco}"></td>
+            <td th:text="${editora.telefone}"></td>
+        </tr>
+        </tbody>
+    </table>
+    <div style="margin-top: 20px;">
+      <a href="/">
+        <button>Voltar ao Menu Principal</button>
+      </a>
+    </div>
+</div>
+</body>
+</html>

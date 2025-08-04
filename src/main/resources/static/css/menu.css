@@ -1,0 +1,49 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #e6f2e6; /* verde suave */
+  margin: 0;
+  padding: 20px;
+}
+
+header h1 {
+  text-align: center;
+  color: #006400; /* verde escuro */
+}
+
+#menu-principal {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#conteudo-menu {
+  max-width: 600px;
+  margin: auto;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 64, 0, 0.1);
+}
+
+#conteudo-menu h2 {
+  margin-bottom: 15px;
+  text-align: center;
+  color: #004d00;
+}
+
+#conteudo-menu button {
+  display: block;
+  width: 80%;
+  margin: 10px auto;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  background-color: #2e8b57; /* verde biblioteca */
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#conteudo-menu button:hover {
+  background-color: #1e6f42;
+}

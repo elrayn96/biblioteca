@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Autores</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<div class="container">
+    <h1>Lista de Autores</h1>
+    <table>
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nome</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="autor : ${autores}">
+            <td th:text="${autor.id}"></td>
+            <td th:text="${autor.nome}"></td>
+        </tr>
+        </tbody>
+    </table>
+    <div style="margin-top: 20px;">
+      <a href="/">
+        <button>Voltar ao Menu Principal</button>
+      </a>
+    </div>
+</div>
+</body>
+</html>
